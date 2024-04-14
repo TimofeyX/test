@@ -1,44 +1,130 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kirito</title>
-    <link rel="stylesheet" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>визитка</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://wsxzaq127.github.io/style.css">
 </head>
+
 <body>
-    <header class="header">
-        <div class="container container_header">
-            <div class="header__logo">
-                <h2 class="header__title">kirito</h2>
-            </div>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item choose">главная</li>
-                    <li class="nav__item">об авторе</li>
-                    <li class="nav__item">видео</li>
-                    <li class="nav__item">галерея</li>
-                    <li class="nav__item">контакты</li>
-                </ul>
-            </nav>
-            <img src="img/8.png" alt="logo" class="header__img">
-        </div>
-    </header>
-    <main class="main">
-        <section class="hero-block">
-            <div class="container container_hero-block">
-                <img src="img/img.png" alt="z" class="hero-block__img">
-                <div class="hero-block__content">
-                    <h1 class="hero-block__title">я, антон
-                        </h1>
-                        <p class="hero-block__text">Я занимаюсь веб-дизайном, front-end и back-end разработкой уже 1 день. Вам нужен дизайн веб-сайта, верстка сайта или может быть сайт "под ключ"? Тогда свяжитесь со мной
-                    
-                        </p>
-                        <a href="https://vk.com/vanodad" target="_blank" class="hero-block__link">Свяжитесь со мной</a>
-                </div>
-            </div>
-        </section>
-    </main>
+	<header class="header">
+		<div class="container container_header">
+			<img class="logo" src="img/img1.png">
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item">Главная</li>
+					<li class="nav__item">ОБ Арбузах</li>
+					<li class="nav__item">Видео</li>
+					<li class="nav__item">Галерея</li>
+				</ul>
+
+			</nav>
+		</div>
+	</header>
+	<main class="main">
+		<section class="about">
+			<div class="container container_about">
+				<h2 class="about__title">
+					Об авторе
+				</h2>
+				<div class="about__content">
+					<div class="about__rate">
+						<h3 class="rate__title">
+							Мои навыки
+						</h3>
+						<ul class="rate__list">
+							<li class="rate__item">
+								<h4 class="rate__name">
+
+									ML
+								</h4>
+								<div class="rate__full">
+									<div class="rate__done">
+
+									</div>
+								</div>
+							</li>
+							<li class="rate__item">
+								<h4 class="rate__name">
+									SS
+								</h4>
+								<div class="rate__full">
+									<div class="rate__done">
+
+									</div>
+								</div>
+							</li>
+							<li class="rate__item">
+								<h4 class="rate__name">
+									MA
+								</h4>
+								<div class="rate__full">
+									<div class="rate__done">
+
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<img src="img/img-group.png" alt="" class="about__img">
+				</div>
+			</div>
+		</section>
+		<section class="video">
+			<div class="container container_video">
+				<h2 class="video__title">Видео</h2>
+				<iframe class="video__video"src="https://www.youtube.com/embed/WyxJQYO06h8?si=SirNtV_MPqxg0jM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+		</section> 
+		<section class="gellary">
+			<h2 gallery__title>Галерея</h2>
+			<ul class="gellary__list">
+				<li class="gallery__item">
+					<a href="img/img1.png" class="lightzoom gellary__link">
+						<img class="gallery__img"src="img/img1.png" >
+					</a>
+				</li>
+				<li class="gallery__item">
+					<a href="img/img2.png" class="lightzoom gellary__link">
+						<img class="gallery__img"src="img/img2.png" >
+					</a>
+				</li>
+				<li class="gallery__item">
+					<a href="img/img3.png" class="lightzoom gellary__link">
+						<img class="gallery__img"src="img/img3.png" >
+					</a>
+				</li>
+				<li class="gallery__item">
+					<a href="img/img4.png" class="lightzoom gellary__link">
+						<img class="gallery__img"src="img/img4.png" >
+					</a>
+				</li>
+				<li class="gallery__item">
+					<a href="img/img5.png" class="lightzoom gellary__link">
+						<img class="gallery__img"src="img/img5.png" >
+					</a>
+				</li>
+				<li class="gallery__item">
+					<a href="img/img6.png" class="lightzoom gellary__link">
+						<img class="gallery__img"src="img/img6.png" >
+					</a>
+				</li>
+
+			</ul>
+		</section>
+	</main>
+	<footer class="footer">
+
+	</footer>
+	<script type="text/javascript" src="https://wsxzaq127.github.io/lightzoom.js"></script>
+	<script type="text/javascript">
+		jQuery('.lightzoom').lightzoom({speed: 400, viewTitle: true});
+		</script>
 </body>
+
 </html>
+	
